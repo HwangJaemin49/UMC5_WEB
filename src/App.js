@@ -1,11 +1,20 @@
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import React from "react";
-import Movie from "./Component/Movie"
+import Movie from "./Component/Movie/Movie.style";
 import { movies } from "./movieDummy";
+import styled, {createGlobalStyle} from "styled-components";
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+
 
 function App() {
   return (
-    <div className="app-container">
+    <AppContainer>
         {
           movies.results.map((item) => {
             return (
@@ -18,7 +27,7 @@ function App() {
             );
           })
         }
-      </div>
+      </AppContainer>
   );
 }
 
