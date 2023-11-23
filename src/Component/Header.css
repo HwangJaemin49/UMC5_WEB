@@ -1,0 +1,17 @@
+li {
+    display: inline-block; 
+    margin: 15px;
+} 
+
+.nav {
+    background-color: #22254b;
+}
+
+.link-styles {
+    text-decoration: none;
+    color:white;
+}
+
+.all {
+    padding-left: 250px;
+}
